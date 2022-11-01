@@ -4,7 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
   p hello world 
-  button(type="button", class="btn btn-info", onclick = doBump(),) Press me 
+  button(type="button", class="btn btn-info", onclick = "doBump()") Press me 
   div(id= "bump") Bump the count 
   scrtip. 
     var count = 0;
@@ -12,5 +12,5 @@ block content
     function doBump (){
       count += bump; 
       bump += 1;
-      document.getelmentbyId("bump") = "Count " count + "Bump" bump
+      document.getElmentById("bump") = "Count " count + "Bump" bump;
      }
