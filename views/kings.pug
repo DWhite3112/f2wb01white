@@ -4,10 +4,9 @@ block content
   h1= title
   p Welcome to #{title}
   p hello world
-  //- var results = [name:"Dree", kingdom:"Everything", years_ruled: 2000   ]
-    div(class = "container-fluid")
-      div(class= "row")
-      - results=[]
-        each item in results 
+  - var results = [name:"Dree", kingdom:"Everything", years_ruled: 2000   ]
+  div(class = "container-fluid")
+    div(class= "row")
+       each item in results 
           li item 
        
