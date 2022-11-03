@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var kingsRouter = require('./routes/kings');
-
+var gridbuildRouter = require('./routes/gridbuild')
 var app = express();
 
 // view engine setup
@@ -17,6 +17,7 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use('/kings', kingsRouter)
+app.use('/gridbuild', gridbuildRouter)
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
