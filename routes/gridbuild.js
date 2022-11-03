@@ -5,6 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('gridbuild', { title: 'Grid Build' });
   let query = req.query
+  rows =10
+  cols = 3
   console.log(`rows ${query.rows}`)
   console.log(`cols ${query.cols}`)
   {title:`Grid Build, query.col` }
